@@ -329,11 +329,11 @@ button:hover{
 .MQ-Grid img{
   max-width: 100px;
   max-height: 100px;
-  align-self: center;
 }
 
+
 body p {
-  text-align: left;
+  text-align: center;
   font-size: var(--font-size-base);
 }
 
@@ -409,6 +409,19 @@ footer cite{
   border: solid 2px rgb(52, 255, 194);
 
  }
+
+ button {
+  padding: 1.5em;
+  background-color: rgb(95, 152, 205);
+  color:rgb(0, 0, 0);
+  transition: all 2s ease;
+}
+
+ button:hover{
+  background-color: #ffe058;
+  border-radius: 50px;
+  color:rgb(234, 0, 0);
+}
 
 }
 
