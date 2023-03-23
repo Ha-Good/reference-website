@@ -20,17 +20,41 @@
 
 html {
   font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #222;
+  scroll-behavior: smooth;
+  line-height: 1.4;
+  font-size: var(--font-size-base);
 }
 
-header {
-  background-color: #000;
+body {
+  margin: 0;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
 
 header h1 {
   text-align: center;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-lg);
+  padding: 2em;
   background-color: #000;
   color: #FFF;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul {
+  display: flex;
+  gap: 2em;
+  margin-right: auto;
 }
 
 header nav ul li { 
@@ -38,7 +62,7 @@ header nav ul li {
   font-size: var(--font-size-sm);
   list-style-type: none;
   margin-right: auto;
-  color: #FFF;
+  color: #333;
   text-decoration: none;
 }
 
@@ -55,15 +79,87 @@ header a{
 header a:visited {
   list-style-type: none;
   text-decoration: none;
-  color: rgb(59, 59, 59);
+  color: rgb(182, 182, 182);
  }
 
-h1 {
-  font-size: var(--font-size-xl)
+.title-h2, .title-h3, .title-h1 {
+  font-size: var(--font-size-xl);
+  text-align: center;
+  color: rgb(28, 80, 63);
 }
 
-ul {
-  list-style-type: none;
-  
-  
+button {
+  padding: 1.5em;
+  background-color: aliceblue;
+  font-size: var(--font-size-md);
+  color:#222;
 }
+
+.grid-examples {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1em;
+  padding: 1em 0;
+}
+
+.grid-examples p {
+  text-align: center;
+
+}
+
+body p {
+  text-align: center;
+  font-size: var(--font-size-base);
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #333;
+    color: #FFF;
+  }
+  
+  .title-h2, .title-h3, .title-h1{
+    color:aquamarine;
+  }
+}
+
+.element {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 75%;
+}
+
+.element {
+  animation: colour-circle 5s infinite;
+}
+
+
+@keyframes colour-circle {
+
+    0% {
+    background-color: #ec2d73;
+  }
+
+   20% {
+    background-color: #4dc87a;
+  }
+
+   40% {
+    background-color: #ff3a62;
+  }
+
+   60% {
+    background-color: #fdc800;
+  }
+  
+  80% {
+    background-color: #1470bd;
+}
+  
+  100%{
+    background-color: #ec2d73;
+  }
