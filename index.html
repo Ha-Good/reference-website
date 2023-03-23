@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="mystyle.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -13,6 +15,7 @@
 <body>
   <header role="navigation">
     <h1>Reference website</h1>
+    <cite> (By Hannah G)</cite>
     <nav>
       <ul>
         <li><a href="#HTML-elements">HTML elements</a> </li>
@@ -26,50 +29,72 @@
     </nav>
   </header>
 <main role="main">
+
 <section id="HTML-elements">
-  <h2 class="title-h2">HTML Elements</h2>
+
+  <h2 class="title-h1">HTML Elements</h2>
+
   <p> HTML stands for HyperText Markup Language. HTML is considered the standard markup language for design of web browsers.</p>
-  <ul>
-    <li><p>This is an exmample of a 'p' tag. It creates regular body or paragraphs of text.</p></li>
-    <li><h1>This is an example of an 'h1,' It creates a heading type </h1></li>
-    <li><h2>This is an example of an 'h2.' It creates another heading type</h2></li>
-    <li><h3>This is an example of an 'h3.' It creates <i>another</i> heading type</h3></li>
-    <li><h4>This is an example of an 'h4.'</h4></li>
-    <li><h5>This is a 'h5.'</h5></li>
-    <li><h6>This is 'h6.'</h6></li>
-  </ul>
+  <div class="first-nav">
+    <ul>
+      <li><p>This is an exmample of a 'p' tag. It creates regular body or paragraphs of text.</p></li>
+      <li><h1>This is an example of an 'h1,' It creates a heading type </h1></li>
+      <li><h2>This is an example of an 'h2.' It creates another heading type</h2></li>
+      <li><h3>This is an example of an 'h3.' It creates <i>another</i> heading type</h3></li>
+      <li><h4>This is an example of an 'h4.'</h4></li>
+      <li><h5>This is a 'h5.'</h5></li>
+      <li><h6>This is 'h6.'</h6></li>
+    </ul>
+  </div>
+
   <p>The above are standard HTML tags to use for entering standard text in Web Design.</p>
 
   <h3 class="title-h3">The Section Tag</h3>
-  <p>The section tag is an important element of formatting text in HTML. The section tag defines a section in a document. While the content in a section tag will be related, it might not be used if there is a more specific element to relate content on a page. A section should also typically have a heading tag that allows for it to be defined. 
-  <h3>The Div Tag</h3>
+  <p>The section tag is an important element of formatting text in HTML. The section tag defines a section in a document. While the content in a section tag will be related, it might not be used if there is a more specific element to relate content on a page. A section should also typically have a heading tag that allows for it to be defined.</p> 
+
+  <h3 class="title-h3">The Div Tag</h3>
   <p>A div tag is similar to a section tag, the div tag defines a division or section in an HTML document. It is then used to group elements to easily format them in CSS.</p>
+
   <h3 class="title-h3"> The Span Tag</h3>
   <p>The span tag has no specific meaning. When used with a class or id element, it can used to style text in CSS. It is similar to the div, however the div works better with block elements and the span works better with inline elements</p>
+
   <h3 class="title-h3">Lists</h3>
   <p>lists are used to create lists.</p>
     <dl>
-      <dt>Ordered List</dt><dd> An Ordered list generates a numbered list it is the 'ol' tag and has children that are 'li' <cite>(list items)</cite></dd>
-      <dt>Unordered Lists</dt> <dd>An unordered list generates a bulleted list. It is the 'ul' tag and has children that are 'li'</dd>
-      <dt>Definition Lists</dt><dd>Definition lists generate lists for content that requires definition. They have children such as the 'dt' tag and the 'dd' tag — Which contains the description or definition.(This info is contained in a 'dl.'</dd> 
+      <dt>Ordered List</dt>
+       <dd> An Ordered list generates a numbered list it is the 'ol' tag and has children that are 'li' <cite>(list items)</cite></dd>
+      <dt>Unordered Lists</dt> 
+       <dd>An unordered list generates a bulleted list. It is the 'ul' tag and has children that are 'li'</dd>
+      <dt>Definition Lists</dt>
+        <dd>Definition lists generate lists for content that requires definition. They have children such as the 'dt' tag and the 'dd' tag — Which contains the description or definition.(This info is contained in a 'dl.'</dd> 
     </dl>
+
  <h3 class="title-h3"> The A tag </h3>
+
  <p> The 'a' tag contains a href element. This is typically used to create a hyperlink.</p>
- <p> For example; <a href="https://en.wikipedia.org/wiki/HTML">This is a link using an A tag!</a></p>
+
+ <p> For example; <a id="thelink" href="https://en.wikipedia.org/wiki/HTML">This is a link using an A tag!</a></p>
+
  <h3 class="title-h3">The img / fig tags</h3>
+
  <figure>
-  <img src="Images/Happy-Face-PNG-Free-Download.png">
+  <div class="image.first"><img src="Images/mountains-55067__340.webp">
   <figcaption>THE FIGURE TAG CONTAINS THE IMG and figcaption. The figcaption is the caption on the figure (img)(wow!)</figcaption>
+  </div>
  </figure>
 
  <h3 class="title-h3"> The q / cite / blockquote tag</h3>
+
  <blockquote> 
  <q>This is content that has been quoted from somewhere. The cite tag allows you to cite. It is contained in a blockquote </q> <cite>Hannah Goodick, 2023.</cite> 
  </blockquote>
- <h3 class="title-h3">Final points</h3>
+
+ <h3 class="title-h3">Final points(OF HTML)</h3>
  <p>The final HTML elements to discuss can all be held within the 'p' tag. They are the: <em>'EM' tag, which creates EMPHASIS</em> This is different than the <strong>'Strong' tag, which represents IMPORTANCE</strong> by bolding the text. The <b>the 'b' tag is used to highlight key words</b>, and the<i> 'i' tag  makes things italic. </i> They are similarities between these four but have specific intentions with each. / And of course the<small> 'small' makes things small. </small>
  </p>
+
 </section>
+
 <section id="Flexbox">
   <h1 class="title-h1">Flexbox</h1>
   <p> Flexbox is a CSS element which allows for (responsive) content within a container to be auto arranged. Flexbox is one dimensional and moves content into rows or columns, and allows content to fit, expand, or shrink into specific areas. </p>
@@ -79,39 +104,67 @@
     <img src="Images/Happy-Face-PNG-Free-Download.png">
   </article>
 </section>
+
 <section id="css-thebest">
   <h1 class="title-h1">CSS Properties</h1>
-  <p>Its the style of the whole webpage!</p>
+  <p>Its the style of the whole webpage! Css properties are elements that are contained in the style sheet of a webpage. This stylesheet is contained in the head of the HTML. Through Css you can edit, alignment, colour, position, size, etc. of any element that is included on a webpage.</p>
 </section>
+
 <section id="CSS-GRID">
   <h1 class="title-h1">What is CSS grid?</h1>
   <p>Css Grid is a method to create responsive grid layouts for web design. The main difference between Grid and flexbox is that grid is better for two dimensional layout, whereas Flexbox is better for one-dimensional. Like Flexbox, grid is defined in the css style sheet of a webpage </p>
-  <article id="grid-examples">
-    <img src="Images/Happy-Face-PNG-Free-Download.png">
-     <figcaption>Its a Happy face!</figcaption>
-    <img src="Images/Happy-Face-PNG-Free-Download.png">
-     <figcaption>Its a Happy face!(x2)</figcaption>
-    <img src="Images/Happy-Face-PNG-Free-Download.png">
-     <figcaption>Its a Happy face!(x3)</figcaption>
+  <article class="grid-examples">
+    <section> 
+       <img src="Images/Happy-Face-PNG-Free-Download.png">
+      <figcaption>Its a Happy face!</figcaption>
+    </section>
+    <section>
+      <img src="Images/Happy-Face-PNG-Free-Download.png">
+      <figcaption>Its a Happy face!(x2)</figcaption>
+    </section>
+    <section>
+       <img src="Images/Happy-Face-PNG-Free-Download.png">
+      <figcaption>Its a Happy face!(x3)</figcaption>
+    </section>
   </article>
 </section>
+
 <section id="css-trans">
   <h1 class="title-h1"> But what about transitions?</h1>
-  <button> Click here for an example </button>
-  <button> (The buttons are the example theres no link)</button>
+  <article class="button.grid">
+    <button> hover here for an example </button>
+    <button> The buttons dnt link anywhere</button>
+    <button> Buttons are also my fav </button>
+    <button> b/c they remind me of 2005</button>
+  </article>
 </section>
+
 <section id="media-queries">
-  <p><em>media-queries? drag the page to see</em>! Also; change your display perference to see!</p>
+  <article class="MQ-Grid">
+    <img src="Images/Emoji_Icon_-_Thinking_large.webp">
+    <h1 class="title-h1">Media Queries!</h1>
+    <img src="Images/Emoji_Icon_-_Thinking_large.webp">
+  </article>
+  <p>Media queries are additional ways to design your webpage and the elements within it in css that allow for accessibility when viewing a webpage. change your display perference to see!</p>
 </section>
+
 <section id="animate">
   <div class="container">
-    <div class="page-text animate__animated animate__fadeInLeft animate__slower animate__repeat-3">
       <h1 class="title-h1"> Animation!</h1>
       <p> You can animate elements in your webdesign through the applicable of animate.css</p>
+      <article class="animate.grids">
         <div class="element"></div>
-    </div>
+        <div class="element"></div>
+      </article>
   </div>
 </section>
+
 </main>
+
+<footer id="content-info">
+
+<cite> All information contained in this page was written by Hannah G. (Me) All the pictures are from google images © 2023</cite>
+</footer>
+
 </body>
 </html>

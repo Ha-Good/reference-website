@@ -36,14 +36,40 @@ img {
   max-width: 100%;
 }
 
+figure img{
+ max-width: 300px;
+ max-height: 300px;
+ display: grid;
+ place-items: center;
+}
 
+figcaption {
+  font-style: italic;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem .5rem;
+}
 
 header h1 {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin:0%;
   font-size: var(--font-size-lg);
-  padding: 2em;
-  background-color: #000;
-  color: #FFF;
+  padding-top: 2em;;
+  color: #4dc87a;
+}
+
+header cite{
+  font-size: var(--font-size-sm);
+  padding-bottom: 2em;
+  color: #4dc87a;
 }
 
 nav {
@@ -82,35 +108,115 @@ header a:visited {
   color: rgb(182, 182, 182);
  }
 
-.title-h2, .title-h3, .title-h1 {
+.title-h2, .title-h1 {
   font-size: var(--font-size-xl);
-  text-align: center;
   color: rgb(28, 80, 63);
+}
+
+.title-h1 {
+  text-align: center;
+  text-decoration: dotted;
+ 
+}
+
+.title-h3 {
+  font-size: var(--font-size-md);
+  color: #FF7927;  
+}
+
+.title-h3::before {
+  font-family: "Material Icons Outlined";
+  content: 'radio_button_checked';
+  padding-right: 0.25em;
+}
+
+.first-nav ul {
+  list-style-type: none;
+}
+
+dt {
+  text-decoration: underline;
+  font-weight: 700;
+  padding-left: 2em;
+  padding-bottom: 0.5em;
+}
+
+dt::before {
+  font-family: "Material Icons Outlined";
+  content: 'verified';
+  padding-right: 0.25em;
+}
+
+dd {
+  font-style: italic;
+  padding-left: 3em;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
 }
 
 button {
   padding: 1.5em;
-  background-color: aliceblue;
+  background-color: rgb(199, 223, 246);
   font-size: var(--font-size-md);
-  color:#222;
+  color:#333;
+  transition: all 2s ease;
+  width: 300px;
+  height: 300 px;
 }
+
+button:hover{
+  background-color: #3c3670;
+  border-radius: 50px;
+  color:#FFF;
+}
+
 
 .grid-examples {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1em;
-  padding: 1em 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3%;
 }
 
-.grid-examples p {
+.grid-examples figcaption {
   text-align: center;
+  color:#1470bd;
+  font-weight: 700;
+}
+.grid-examples section {
+  background-color: #f0e0a6;
+  border-radius: 40px;
+}
 
+.MQ-Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3%;
+}
+
+.MQ-Grid img{
+  max-width: 100px;
+  max-height: 100px;
+  align-self: center;
 }
 
 body p {
-  text-align: center;
+  text-align: left;
   font-size: var(--font-size-base);
+}
+
+footer {
+  padding: 3em;
+  text-align: center;
+  background-color: rgb(108, 108, 108);
+}
+
+footer cite{
+  font-size: var(--font-size-sm);
+  color:#4dc87a;
 }
 
 
@@ -120,10 +226,20 @@ body p {
     color: #FFF;
   }
   
-  .title-h2, .title-h3, .title-h1{
+  .title-h2, .title-h1{
     color:aquamarine;
   }
+
+  .title-h3 {
+    color:#ff3a62;
+  }
+
+  footer {
+    background-color: #000000;
+  }
+
 }
+
 
 .element {
   width: 200px;
@@ -131,6 +247,7 @@ body p {
   margin: 0 auto;
   background-color: #fff;
   border-radius: 75%;
+  border: solid 4px  #FFF;
 }
 
 .element {
@@ -141,25 +258,25 @@ body p {
 @keyframes colour-circle {
 
     0% {
-    background-color: #ec2d73;
+    background-color: #ebb0c6;
   }
 
    20% {
-    background-color: #4dc87a;
+    background-color: #344f3e;
   }
 
    40% {
-    background-color: #ff3a62;
+    background-color: #402c30;
   }
 
    60% {
-    background-color: #fdc800;
+    background-color: #49ff4c;
   }
   
   80% {
-    background-color: #1470bd;
+    background-color: #88c6f8;
 }
   
   100%{
-    background-color: #ec2d73;
+    background-color: #e0cdd4;
   }
