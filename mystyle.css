@@ -108,6 +108,13 @@ header a:visited {
   color: rgb(182, 182, 182);
  }
 
+ section {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  border-bottom: #d8edff;
+  border-top: #d8edff;
+ }
+
 .title-h2, .title-h1 {
   font-size: var(--font-size-xl);
   color: rgb(28, 80, 63);
@@ -151,6 +158,128 @@ dd {
   font-style: italic;
   padding-left: 3em;
 }
+
+.thelink a{
+  text-decoration: none;
+  color:rgb(82, 181, 203);
+}
+
+.thelink a:hover {
+  text-decoration: underline;
+  color: rgb(251, 181, 59);
+}
+
+.thelink a:visited {
+  text-decoration: none;
+  color:rgb(173, 27, 4);
+}
+
+.row img{ 
+ display: inline-block;
+ width: 200px;
+}
+
+.row-reverse img{
+  display: inline-block;
+ width: 200px;
+}
+
+.column img{
+  display: inline-block;
+ width: 200px;
+}
+
+.column-reverse img{
+  display: inline-block;
+  width: 200px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  background-color: #f6ff50;
+  border-radius: 1000px;
+  max-width:75%;
+}
+
+.row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #f6ff50;
+  border-radius: 100px;
+  max-width:75%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.align-center img{
+  display: inline-block;
+  width: 200px;
+}
+
+.align-stretch img{
+  display: inline-block;
+  width: 200px;
+}
+
+.flex-end img{
+  display: inline-block;
+  width: 200px;
+}
+
+.flex-start img{
+  display: inline-block;
+  width: 200px;
+}
+
+.flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.align-stretch {
+  display: flex;
+  align-items: stretch;
+}
+
+.align-stretch h4 , .align-center h4 ,
+.flex-end h4 , .flex-start h4 {
+  text-align: center;
+  padding: 0 2em;
+  color: rgb(0, 0, 0);
+}
+
+.align-center div p, .align-stretch div p,
+ .flex-end div p, .flex-start div p{
+  font-size: var(--font-size-sm);
+  padding: 0.5em;
+}
+
+.align-center div, .align-stretch div,
+ .flex-end div, .flex-start div {
+  background-color: #d8edff;
+  border: solid 2px #000;
+
+ }
+
 
 .button-grid {
   display: grid;
@@ -219,6 +348,20 @@ footer cite{
   color:#4dc87a;
 }
 
+.element {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 75%;
+  border: solid 4px  #FFF;
+}
+
+.element {
+  animation: colour-circle 5s infinite;
+}
+
+
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -238,22 +381,36 @@ footer cite{
     background-color: #000000;
   }
 
+  .thelink a{
+    text-decoration: none;
+    color:rgb(197, 244, 255);
+  }
+  
+  .thelink a:hover {
+    text-decoration: underline;
+    color: rgb(33, 127, 64);
+  }
+  
+  .thelink a:visited {
+    text-decoration: none;
+    color:rgb(14, 122, 255);
+  }
+
+  .align-stretch h4 , .align-center h4 ,
+.flex-end h4 , .flex-start h4 {
+  text-align: center;
+  padding: 0 2em;
+  color: rgb(255, 255, 255);
 }
 
+.align-center div, .align-stretch div,
+ .flex-end div, .flex-start div {
+  background-color: #000000;
+  border: solid 2px rgb(52, 255, 194);
 
-.element {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  background-color: #fff;
-  border-radius: 75%;
-  border: solid 4px  #FFF;
+ }
+
 }
-
-.element {
-  animation: colour-circle 5s infinite;
-}
-
 
 @keyframes colour-circle {
 

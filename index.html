@@ -72,8 +72,9 @@
  <h3 class="title-h3"> The A tag </h3>
 
  <p> The 'a' tag contains a href element. This is typically used to create a hyperlink.</p>
-
- <p> For example; <a id="thelink" href="https://en.wikipedia.org/wiki/HTML">This is a link using an A tag!</a></p>
+ <article class="thelink">
+  <p> For example; <a href="https://en.wikipedia.org/wiki/HTML">This is a link using an A tag!</a></p>
+ </article>
 
  <h3 class="title-h3">The img / fig tags</h3>
 
@@ -97,12 +98,149 @@
 
 <section id="Flexbox">
   <h1 class="title-h1">Flexbox</h1>
-  <p> Flexbox is a CSS element which allows for (responsive) content within a container to be auto arranged. Flexbox is one dimensional and moves content into rows or columns, and allows content to fit, expand, or shrink into specific areas. </p>
-  <article class="flexbox-examples">
-    <img src="Images/Happy-Face-PNG-Free-Download.png">
-    <img src="Images/Happy-Face-PNG-Free-Download.png">
-    <img src="Images/Happy-Face-PNG-Free-Download.png">
+  <p> Flexbox is a CSS element which allows for (responsive) content within a container to be auto arranged. Flexbox is one dimensional and moves content into rows or columns, and allows content to fit, expand, or shrink into specific areas. The below shows some ways flex bx can be used — including how to align and wrap content.</p>
+  <article>
+    <h3>ROW</h3>
+    <div class="row">
+      <img src="Images/Happy-Face-PNG-Free-Download.png">
+      <img src="Images/Happy-Face-PNG-Free-Download.png">
+      <img src="Images/Happy-Face-PNG-Free-Download.png">
+      <img src="Images/Happy-Face-PNG-Free-Download.png">
+    </div>
   </article>
+  <article>
+    <h3>ROW-REVERSE</h3>
+    <div class="row-reverse">
+      <img src="Images/Happy-Face-PNG-Free-Download.png">
+      <img src="Images/Happy-Face-PNG-Free-Download.png">
+      <img src="Images/Happy-Face-PNG-Free-Download.png">
+      <img src="Images/Happy-Face-PNG-Free-Download.png">
+    </div>
+  </article>
+  <article>
+    <h3>COLUMN</h3>
+    <div class="column">
+      <img src="Images/Happy-Face-PNG-Free-Download.png">
+      <img src="Images/Happy-Face-PNG-Free-Download.png">
+      <img src="Images/download.png">
+      <img src="Images/download.png">
+    </div>
+  </article>
+  <article>
+    <h3>COLUMN-REVERSE</h3>
+    <div class="column-reverse">
+      <img src="Images/Happy-Face-PNG-Free-Download.png">
+      <img src="Images/Happy-Face-PNG-Free-Download.png">
+      <img src="Images/download.png">
+      <img src="Images/download.png">
+    </div>
+  </article>
+
+  <article>
+    <h3>FLEX-STARt</h3>
+    <div class="flex-start">
+      <div> 
+        <img src="Images/Happy-Face-PNG-Free-Download.png">
+        <h4>This an example</h4>
+        <p>This is body text this is body text</p>
+      </div>
+      <div> 
+        <img src="Images/1553141273_68781.png">
+        <h4>This an example</h4>
+        <p>This is body text this is body text</p>
+      </div>
+      <div> 
+        <img src="Images/Happy-Face-PNG-Free-Download.png">
+        <h4>This an example</h4>
+        <p>This is body text this is body text</p>
+      </div>
+      <div> 
+        <img src="Images/1553141273_68781.png">
+        <h4>This an example</h4>
+        <p>This is body text this is body text</p>
+      </div>
+    </div>
+  </article>
+
+  <article>
+    <h3>FLEX-END</h3>
+    <div class="flex-end">
+      <div> 
+        <img src="Images/Happy-Face-PNG-Free-Download.png">
+        <h4>This an example</h4>
+        <p>This is body text this is body text</p>
+      </div>
+      <div> 
+        <img src="Images/1553141273_68781.png">
+        <h4>This an example</h4>
+        <p>This is body text this is body text</p>
+      </div>
+      <div> 
+        <img src="Images/Happy-Face-PNG-Free-Download.png">
+        <h4>This an example</h4>
+        <p>This is body text this is body text</p>
+      </div>
+      <div> 
+        <img src="Images/1553141273_68781.png">
+        <h4>This an example</h4>
+        <p>This is body text this is body text</p>
+      </div>
+    </div>
+  </article>
+
+  <article>
+    <h3>CENTER</h3>
+    <div class="align-center">
+      <div> 
+        <img src="Images/Happy-Face-PNG-Free-Download.png">
+        <h4>This an example</h4>
+        <p>This is body text this is body text</p>
+      </div>
+      <div> 
+        <img src="Images/1553141273_68781.png">
+        <h4>This an example</h4>
+        <p>This is body text this is body text</p>
+      </div>
+      <div> 
+        <img src="Images/Happy-Face-PNG-Free-Download.png">
+        <h4>This an example</h4>
+        <p>This is body text this is body text</p>
+      </div>
+      <div> 
+        <img src="Images/1553141273_68781.png">
+        <h4>This an example</h4>
+        <p>This is body text this is body text</p>
+      </div>
+     </div>
+  </article>
+
+  <article>
+    <h3>STRETCH</h3>
+    <div class="align-stretch">
+      <div> 
+        <img src="Images/Happy-Face-PNG-Free-Download.png">
+        <h4>This an example</h4>
+        <p>This is body text this is body text</p>
+      </div>
+      <div> 
+        <img src="Images/1553141273_68781.png">
+        <h4>This an example</h4>
+        <p>This is body text this is body text</p>
+      </div>
+      <div> 
+        <img src="Images/Happy-Face-PNG-Free-Download.png">
+        <h4>This an example</h4>
+        <p>This is body text this is body text</p>
+      </div>
+      <div> 
+        <img src="Images/1553141273_68781.png">
+        <h4>This an example</h4>
+        <p>This is body text this is body text</p>
+      </div>
+    </div>
+  </article>
+
+
 </section>
 
 <section id="css-thebest">
