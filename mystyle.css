@@ -97,6 +97,10 @@ header nav ul li:hover {
   text-decoration: none;
 }
 
+.first-p {
+  text-align: left;
+}
+
 header a{
  list-style-type: none;
  text-decoration: none;
